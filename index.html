@@ -30,16 +30,25 @@
                 <a href="tel:+7 (495) 500-44-44" class="phone"><strong>+7 (495) 500-44-44</strong></a>    
             </div>
             <nav>
-                <ul class="wrapper flex flex-between">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">акции</a></li>
-                    <li><a href="">услуги</a></li>
-                    <li><a href="">карты</a></li>
-                    <li><a href="">команда</a></li>
-                    <li><a href="">обзор клуба</a></li>
-                    <li><a href="">расписание</a></li>
-                    <li><a href="">контакты</a></li>
-                </ul>
+                <div class="wrapper">
+                    <button id="menu_button"></button>
+                    <button class="order order_call green"><strong>Заказать звонок</strong></button>
+                    <button class="order get_card orange"><strong>Заказать карту</strong></button>
+
+                    <div class="mobile_menu">
+                        <div id="overlay_close"></div>
+                        <ul class="flex flex-between">
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">акции</a></li>
+                            <li><a href="">услуги</a></li>
+                            <li><a href="">карты</a></li>
+                            <li><a href="">команда</a></li>
+                            <li><a href="">обзор клуба</a></li>
+                            <li><a href="">расписание</a></li>
+                            <li><a href="">контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -51,7 +60,7 @@
         </section>
 
         <section class="features">
-            <div class="wrapper flex flex-between">
+            <div class="wrapper flex flex-around">
                 <div class="feature_box">
                     <figure>
                         <img src="images/f1.svg" alt="">

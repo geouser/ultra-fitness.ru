@@ -11,8 +11,11 @@ window.params = {
 #############################
 */
 
-jQuery(document).ready(function($) {
 
+jQuery(document).ready(function($) {
+  if ( $('html').hasClass('no-flexbox') ) {
+    console.log('log');
+  }
 
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
@@ -38,10 +41,19 @@ jQuery(document).ready(function($) {
   });
 
 
-  /*$('.services_grid').masonry({
-    // options
-    itemSelector: '.grid_box',
-  });*/
+  $('#menu_button').on('click', function(event) {
+    event.preventDefault();
+    $(this).toggleClass('active');
+    $('.mobile_menu').toggleClass('active');
+    $('body, html').toggleClass('menu_active');
+  });
+
+  $('#overlay_close').on('click', function(event) {
+    event.preventDefault();
+    $('#menu_button').removeClass('active');
+    $('.mobile_menu').removeClass('active');
+    $('body, html').removeClass('menu_active');
+  });
 
 });
 
