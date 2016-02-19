@@ -65,7 +65,7 @@
         <div class="contacts">
             <div class="wrapper">
                 <address><strong>г. Москва, ул. Побратимов, дом 7, ТРЦ «Светофор»</strong></address>
-                <div class="map_block" id="map-canvas" data-lat="55.692151" data-long="37.896525"></div>    
+                <div class="map_block" id="map-canvas" data-lat="55.692151" data-long="37.896525"></div>
             </div>
         </div>
         <!-- end contacts -->
@@ -170,5 +170,41 @@
         <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 
         <script src="js/main.js"></script>
+        
+        <!-- begin google map initialization -->
+        <script>
+            jQuery(document).ready(function($) {
+                function googleMap_initialize() {
+                  var lat = $('#map-canvas').attr('data-lat');
+                  var long = $('#map-canvas').attr('data-long');
+                  var mapCenterCoord = new google.maps.LatLng(lat, long);
+                  var mapMarkerCoord = new google.maps.LatLng(lat, long);
+
+                  var mapOptions = {
+                    center: mapCenterCoord,
+                    zoom: 16,
+                    //draggable: false,
+                    disableDefaultUI: false,
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                  };
+
+                  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+                  var markerImage = new google.maps.MarkerImage('images/green-marker.svg');
+                  var marker = new google.maps.Marker({
+                    icon: markerImage,
+                    position: mapMarkerCoord, 
+                    map: map,
+                    title:"ULTRA Fitness"
+                  });
+                  $(window).resize(function (){
+                    map.setCenter(mapCenterCoord);
+                  });
+                };
+                googleMap_initialize();
+            });     
+        </script>
+        <!-- end google map initialization -->
+        
     </body>
 </html>
