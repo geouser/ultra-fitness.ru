@@ -55,6 +55,14 @@ jQuery(document).ready(function($) {
     $('body, html').removeClass('menu_active');
   });
 
+  $('.slider').slick({
+    fade: true,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000
+  })
+
 });
 
 
