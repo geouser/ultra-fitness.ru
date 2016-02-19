@@ -63,6 +63,37 @@ jQuery(document).ready(function($) {
     autoplaySpeed: 5000
   })
 
+
+
+  function googleMap_initialize() {
+      var lat = $('#map-canvas').attr('data-lat');
+      var long = $('#map-canvas').attr('data-long');
+      var mapCenterCoord = new google.maps.LatLng(lat, long);
+      var mapMarkerCoord = new google.maps.LatLng(lat, long);
+
+      var mapOptions = {
+        center: mapCenterCoord,
+        zoom: 16,
+        //draggable: false,
+        disableDefaultUI: false,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      var markerImage = new google.maps.MarkerImage('images/green-marker.svg');
+      var marker = new google.maps.Marker({
+        icon: markerImage,
+        position: mapMarkerCoord, 
+        map: map,
+        title:"ULTRA Fitness"
+      });
+      $(window).resize(function (){
+        map.setCenter(mapCenterCoord);
+      });
+  };
+  googleMap_initialize();
+
 });
 
 

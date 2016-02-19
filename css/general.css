@@ -1465,3 +1465,79 @@ footer .copy a:hover {
         height: auto;
     }
 }
+
+
+/* --------------------------------------
+   Social plugins
+   -------------------------------------- */
+.col-3                      {  width: 33.33%; float: left;}
+.social_plugins             { padding: 50px 0 90px;}
+.social_plugins h2          { font-size: 30px; text-transform: uppercase; margin-bottom: 20px;}
+
+.social_plugins .box        { height: 330px; text-align: center;}
+
+#vk_groups                  { display: inline-block;}
+.fb-page                    { width: 290px!important; height: 330px!important;}
+.fb_iframe_widget span      { height: 100%!important; width: 100%!important;}
+.fb_iframe_widget iframe    { width: 100%!important; height: 100%!important;}
+
+.head                       { height: 34px; 
+                              width: 290px;
+                              display: inline-block;
+                              background-color: #004879;
+                              text-align: left;
+                              border-radius: 5px;}
+.head p                     { display: inline-block; vertical-align: middle; color: #fff;}
+.head img                   { height: 80%; display: inline-block; vertical-align: middle; margin-left: 5px; margin-right: 5px;}
+
+@media (max-width: 950px) {
+  .social_plugins .col-3    { width: 50%; float: none; margin: 15px -2px; display: inline-block; vertical-align: top;}
+  .social_plugins           { padding: 30px 0;}
+}
+
+@media (max-width: 650px) {
+  .social_plugins .col-3    { width: 100%;}
+  .head                     { margin: 0 20px;}
+}
+@media (max-width: 400px) {
+  .head                     { margin: 0;}
+}
+
+
+
+
+/* --------------------------------------
+   CONTACTS page
+   -------------------------------------- */
+.contacts {
+    padding-top: 80px;
+    position: relative;
+}
+.contacts:before {
+    content: '';
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(66,66,66); /* Old browsers */
+    background: -webkit-linear-gradient(rgba(66,66,66,.2) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(rgba(66,66,66,.2) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(rgba(66,66,66,.2) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.contacts address {
+    font-size: 25rem;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+.map_block {
+    width: 100%;
+    height: 430px;
+}
+
+@media (max-width: 600px) {
+    .map_block {
+        height: 250px;
+    }
+}
