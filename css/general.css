@@ -332,7 +332,6 @@ nav:after {
     top: 100%;
     left: 0;
     right: 0;
-    background: rgb(66,66,66); /* Old browsers */
     background: -webkit-linear-gradient(rgba(66,66,66,.2) 0%,rgba(66,66,66,.05) 60%, rgba(255,255,255,0) 100%);
     background: -o-linear-gradient(rgba(66,66,66,.2) 0%, rgba(66,66,66,.05) 60%, rgba(255,255,255,0) 100%);
     background: linear-gradient(rgba(66,66,66,.2) 0%, rgba(66,66,66,.05) 60%, rgba(255,255,255,0) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -358,13 +357,13 @@ nav ul {
 nav ul li {
   width: 12.5%;
 }
-.no-flexbox nav ul li {
+.no-flexbox nav ul li { /*for IE9*/
     float: left;
 }
-.no-flexbox nav:before {
+.no-flexbox nav:before { /*for IE9*/
     display: none;
 }
-.no-flexbox nav ul:after {
+.no-flexbox nav ul:after { /*for IE9*/
     content: '';
     display: block;
     clear: both;
@@ -634,13 +633,13 @@ nav ul li a:hover {
 .features {
   padding: 170px 0;
 }
-.no-flexbox .features {
+.no-flexbox .features { /*for IE9*/
     text-align: center;
 }
 .feature_box {
   width: 33%;
 }
-.no-flexbox .feature_box {
+.no-flexbox .feature_box { /*for IE9*/
     display: inline-block;
     vertical-align: top;
     margin: 0 -2px;
@@ -1126,15 +1125,15 @@ footer .site_map {
 footer .site_map ul.flex li {
   list-style: none;
 }
-.no-flexbox footer .site_map ul.flex {
+.no-flexbox footer .site_map ul.flex { /*for IE9*/
     text-align: justify;
 }
-.no-flexbox footer .site_map ul.flex:after {
+.no-flexbox footer .site_map ul.flex:after { /*for IE9*/
     content: '';
     display: inline-block;
     width: 100%;
 }
-.no-flexbox footer .site_map ul.flex > li {
+.no-flexbox footer .site_map ul.flex > li { /*for IE9*/
     display: inline-block;
     vertical-align: top;
     margin: 10px -2px;
@@ -1170,7 +1169,7 @@ footer .socials {
   bottom: 0;
   left: 0;
 }
-.no-flexbox .socials {
+.no-flexbox .socials { /*for IE9*/
     position: static;
     display: block;
     margin: 0 auto;
@@ -1371,6 +1370,10 @@ footer .copy a:hover {
     border: 1px solid #D7D7D7;
     margin-bottom: 30px;
 }
+.no-flexbox .person { /*for IE9*/
+    display: inline-block;
+    vertical-align: top;
+}
     .person__foto {
         width: 132px;
         height: 132px;
@@ -1556,6 +1559,11 @@ footer .copy a:hover {
     background-size: cover;
     padding: 0 25px 90px;
     text-align: left;
+}
+.no-flexbox .action { /* for IE9*/
+    display: inline-block;
+    vertical-align: top;
+
 }
     .action:before {
         content: '';
