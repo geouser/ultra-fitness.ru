@@ -1977,6 +1977,21 @@ button.mfp-arrow-right:hover {
     vertical-align: top;
     margin-left: -4px;
 }
+.controls__select .dropdown #close_dropdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+    font-size: 28px;
+    color: #818181;
+    border: 2px solid #818181;
+    padding: 0;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 50%;
+}
 .controls__select .dropdown li * {
     display: inline-block;
     vertical-align: middle;
