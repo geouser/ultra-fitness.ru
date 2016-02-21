@@ -1288,18 +1288,24 @@ footer .copy a:hover {
 
 
 /*breadcrumbs*/
-.breadcrumbs {
+.breadcrumbs,
+.back_button {
     display: block;
     text-align: left;
-    padding: 40px 0 40px /*300px*/; /*300px - sidebar width (300px)*/
+    padding: 40px 0 40px; 
+}
+.is_sidebar .breadcrumbs {
+    padding-left: 300px; /*300px - sidebar width (300px)*/
 }
 
 .breadcrumbs ol,
-.breadcrumbs ul {
+.breadcrumbs ul,
+.back_button ol {
     margin: 0;
     padding: 0;
 }
-.breadcrumbs li {
+.breadcrumbs li,
+.back_button li {
     display: inline-block;
     vertical-align: middle;
     list-style: none;
@@ -1307,12 +1313,14 @@ footer .copy a:hover {
     position: relative;
 }
 
-.breadcrumbs li a {
+.breadcrumbs li a,
+.back_button li a {
     color: #9a9a9a;
     text-decoration: none;
     font-size: 15rem;
 }
-.breadcrumbs li:not(:last-child)  a:hover {
+.breadcrumbs li:not(:last-child)  a:hover,
+.back_button li a:hover {
     text-decoration: underline;
 }
 .breadcrumbs li:not(:last-child) a:after {
@@ -1320,6 +1328,12 @@ footer .copy a:hover {
     display: inline-block;
     margin-left: 7px;
 }
+.back_button li a:before {
+    content: '<';
+    display: inline-block;
+    margin-right: 7px;
+}
+
 .breadcrumbs li:last-child a {
     color: #000;
 }
@@ -1347,6 +1361,9 @@ footer .copy a:hover {
         .sidebar-menu__item a {
             color: #000;
             transition: all 0.3s ease;
+        }
+        .sidebar-menu__item.active a {
+            text-decoration: underline;
         }
         .sidebar-menu__item a:hover {
             color: #00bf00;
@@ -1416,6 +1433,10 @@ footer .copy a:hover {
     .sidebar {
         width: 200px;
     }
+    .is_sidebar .breadcrumbs {
+        padding-left: 200px; /*200px - sidebar width (200px)*/
+    }
+
         .sidebar-menu__item {
             margin-bottom: 10px;
         }
@@ -1440,7 +1461,7 @@ footer .copy a:hover {
 
 
 @media (max-width: 767px) {
-    .breadcrumbs {
+    .is_sidebar .breadcrumbs {
         padding-left: 0;
     }
 
@@ -1684,5 +1705,67 @@ footer .copy a:hover {
 @media (max-width: 500px) {
     .action__title {
         font-size: 18rem;
+    }
+}
+
+/* --------------------------------------
+   ACCTION_DETAILS page
+   -------------------------------------- */
+.ation_details {
+    text-align: left;
+    padding-bottom: 100px;
+}
+    .ation_details figure {
+        float: left;
+        width: 394px;
+        margin: 0 50px 50px 0;
+    }
+        .ation_details figure img {
+            width: 100%;
+            height: auto;
+        }
+
+    .ation_details .action__date {
+        position: static;
+    }
+
+    .ation_details h2 {
+        font-size: 35rem;
+        line-height: 35rem;
+        margin: 25px 0;
+        font-weight: normal;
+    }
+
+    .ation_details p {
+        margin-bottom: 20px;
+    }
+
+
+@media (max-width: 1200px) {
+    .ation_details figure {
+        width: 350px;
+    }
+    .ation_details h2 {
+        font-size: 30rem;
+        line-height: 30rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .ation_details figure {
+        width: 300px;
+        margin: 0 25px 25px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .ation_details figure {
+        float: none;
+        display: block;
+        margin: 0 auto 50px auto;
+    }
+    .ation_details h2 {
+        font-size: 25rem;
+        line-height: 25rem;
     }
 }
