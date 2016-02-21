@@ -21,7 +21,7 @@
 
         <link rel="stylesheet" href="css/general.css">
     </head>
-    <body>
+    <body class="is_sidebar">
 
         <!-- //////////////////////////////////////////////////////////////////////// -->
 
@@ -42,11 +42,11 @@
                         <div id="overlay_close"></div>
                         <ul class="flex flex-between">
                             <li><a href="index.html"><strong>Главная</strong></a></li>
-                            <li class="active"><a href="actions.html"><strong>акции</strong></a></li>
+                            <li><a href="actions.html"><strong>акции</strong></a></li>
                             <li><a href=""><strong>услуги</strong></a></li>
                             <li><a href=""><strong>карты</strong></a></li>
                             <li><a href="team.html"><strong>команда</strong></a></li>
-                            <li><a href="scheme.html"><strong>обзор клуба</strong></a></li>
+                            <li class="active"><a href="scheme.html"><strong>обзор клуба</strong></a></li>
                             <li><a href="timetable.html"><strong>расписание</strong></a></li>
                             <li><a href="contacts.html"><strong>контакты</strong></a></li>
                         </ul>
@@ -54,7 +54,7 @@
                 </div>
             </nav>
         </header>
-        
+
 
         <!-- begin wrapper -->
         <div class="wrapper">
@@ -63,74 +63,48 @@
             <div class="breadcrumbs">
                 <ol>
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">Обзор клуба</a></li>
+                    <li><a href="#">Фотогалерея</a></li>
                 </ol>
             </div>   
             <!-- end breadcrumbs -->
 
+            <!-- begin sidebar -->
+            <div class="sidebar">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu__item"><a href="scheme.html">Схема залов</a></li>
+                    <li class="sidebar-menu__item"><a href="3d.html">3D тур</a></li>
+                    <li class="sidebar-menu__item active"><a href="gallery.html">Фотогалерея</a></li>
+                </ul>
+            </div>
+            <!-- end sidebar -->
 
-            <!-- begin actions -->
-            <section class="actions flex flex-between">
+            <!-- begin main_content -->
+            <div class="main_content">
+                <section class="photo_gallery flex flex-between">
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
 
-                <div class="action" style="background-image: url(images/action01.jpg);">
-                    <span class="action__date"><strong>29.10.15</strong></span>
-                    <h3 class="action__title">Открыт набор в детскую танцевальную студию LATINA</h3>
-                    <a href="#" class="action__more"><strong>Подробнее</strong></a>
-                </div>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
 
-                <div class="action" style="background-image: url(images/action02.jpg);">
-                    <span class="action__date"><strong>29.10.15</strong></span>
-                    <h3 class="action__title">Детский клуб открывает набор в секцию БОКСА</h3>
-                    <a href="#" class="action__more"><strong>Подробнее</strong></a>
-                </div>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
 
-                <div class="action" style="background-image: url(images/action03.jpg);">
-                    <span class="action__date"><strong>12.07.15</strong></span>
-                    <h3 class="action__title">Позвольте своему ребенку быть маленьким художником и творцом</h3>
-                    <a href="#" class="action__more"><strong>Подробнее</strong></a>
-                </div>
-
-                <div class="action" style="background-image: url(images/action04.jpg);">
-                    <span class="action__date"><strong>19.11.15</strong></span>
-                    <h3 class="action__title">Прими участие в турнире по жиму лежа и выиграй спортивное питание. <strong>28 ноября в 19:00</strong></h3>
-                    <a href="#" class="action__more"><strong>Подробнее</strong></a>
-                </div>
-
-                <div class="action" style="background-image: url(images/action05.jpg);">
-                    <span class="action__date"><strong>19.11.15</strong></span>
-                    <h3 class="action__title">Неделя мастер-классов в Ultra-fitness</h3>
-                    <a href="#" class="action__more"><strong>Подробнее</strong></a>
-                </div>
-
-                <div class="action" style="background-image: url(images/action06.jpg);">
-                    <span class="action__date"><strong>19.11.15</strong></span>
-                    <h3 class="action__title">Йога бессмертных</h3>
-                    <a href="#" class="action__more"><strong>Подробнее</strong></a>
-                </div>
-
-                <div class="action" style="background-image: url(images/action07.jpg);">
-                    <span class="action__date"><strong>19.11.15</strong></span>
-                    <h3 class="action__title">Только с <strong>29-31 июля</strong> получи возможность отправится в незабываемую регату</h3>
-                    <a href="#" class="action__more"><strong>Подробнее</strong></a>
-                </div>
-
-                <div class="action" style="background-image: url(images/action08.jpg);">
-                    <span class="action__date"><strong>19.11.15</strong></span>
-                    <h3 class="action__title">Эксклюзивные условия на покупку букетов</h3>
-                    <a href="#" class="action__more"><strong>Подробнее</strong></a>
-                </div>
-
-            </section>
-            <!-- end actions -->
-
-            <a href="#" class="load_more">
-                <i></i>
-                <span>Загрузить еще</span>
-            </a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                    <a href="images/gal_01_big.jpg"><img src="images/gal_01.jpg" alt=""></a>
+                </section>
+            </div>
+            <!-- end main_container -->
 
         </div>
-        <!-- end wrapper-->
-        
+        <!-- end wrapper -->
+
+
 
         <footer>
             <div class="site_map">

@@ -1,0 +1,584 @@
+/* Схема клуба*/
+.rasp .content, 
+.shem .content{padding-bottom:51px;
+    background:url(/img/bottomLine/2.png) 100% 98.4% no-repeat;
+    }
+#clubMap {
+    width:923px;
+    margin: 0 -15px;
+    height:503px;
+    background:url(../images/scheme2/map.png) left top no-repeat;
+    clear:both;
+    position:relative;
+    }
+#tableMap {
+    font-size:11px;
+    margin-left: 21px;
+    }
+#tableMap ul li{
+    list-style-type:none;
+    background:none;
+    margin:0;
+    padding:0;
+    }
+#tableMap ul li {
+    clear:both;
+    height: 19px;
+    }
+#tableMap ul li a {
+    color:#fff;
+    text-decoration:none;
+    }
+#tableMap ul li .number {
+    font-weight:bold;
+    color:#52c2cc;
+    float:left;
+    padding-right:17px;
+    margin-left:-1px;
+    
+    }
+#tableMap div {
+    float:left;
+    padding-left:8px;
+    }
+#tableMap div  div{
+    padding:0;
+    padding-right:8px;
+    }
+#tableMap div  div div {
+    padding:0;
+    }
+#tableMap .active div {
+    background:url(../images/scheme2/left.png) top left no-repeat;
+}
+#tableMap .active div div {
+    background:url(../images/scheme2/right.png) top right no-repeat;
+    }
+#tableMap .active div  div div {
+    background:#357e84;
+    }
+#tableMap .active a {
+    text-decoration:underline;
+    }
+#tableMap .active .number {
+    color:#fff;
+    }
+#tableMap ul {
+    width:278px;
+    float:left;
+    }
+
+
+
+#clubMap .pointNavigation {
+    height:25px;
+    background:url(../images/scheme2/k_pasive.png) 0px 0px no-repeat;
+    vertical-align:middle;
+    color:#357e84;
+    font-size:12px;
+    font-weight:bold;
+    text-align: left;
+    padding-top: 5px;
+    /*cursor:pointer;*/
+    /*float:left;*/
+    }
+#clubMap .number {
+    width:27px;
+    text-align:center;
+    float:left;
+    }
+#clubMap .pointNavigation .textN {
+    display:none;
+    /*float:left;*/
+    background:url(../images/scheme2/plash.png) top right no-repeat;
+    /*margin-top: -5px;
+    padding: 5px 22px 6px 20px;*/
+    padding:6px 22px 7px 20px;
+    color:#fff;
+    margin-left: 27px;
+    }
+    
+#clubMap .point {
+    position:absolute;
+    }
+#clubMap .zona_1 .pointNavigation {
+    left: 23px;
+    position: relative;
+    top: 10px;
+    }
+
+#clubMap .point.active {
+    
+    }
+#clubMap .zona_2{
+    left: 468px;
+    top: 306px;
+}
+#clubMap .zona_3{
+    left: 468px;
+    top: 209px;
+}
+#clubMap .zona_4{
+    left: 529px;
+    top: 151px;
+}
+#clubMap .zona_7{
+    left:268px;
+    top:247px;
+}
+#clubMap .zona_9{
+    left:147px;
+    top:347px;
+}
+#clubMap .zona_13{
+    left:341px;
+    top:347px;
+}
+#clubMap .point.active .pointNavigation {
+    background:url(../images/scheme2/k.png) 0px 0px no-repeat;
+    }
+#clubMap .point.active .pointNavigation .number {
+
+    color:#fff;
+    }
+
+
+/*end Схема клуба*/
+
+
+.point {
+    /*opacity: 0.5;*/
+    
+}
+#clubMap .point.active {
+z-index:1111111;
+}
+#clubMap .pointNavigation {
+/*width: 340px;*/
+}
+
+#clubMap .zona_19 .pointNavigation{
+    margin-left: 149px;
+    margin-top: 15px;
+}
+#clubMap .zona_27 .pointNavigation{
+    margin-left: 149px;
+    margin-top: 15px;
+}
+#clubMap .zona_26 .pointNavigation{
+    margin-left: 110px;
+    margin-top: 20px;
+}
+#clubMap .zona_33 .pointNavigation{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+#clubMap .zona_34 .pointNavigation{
+    margin-left: 180px;
+    margin-top: 0px;
+}
+#clubMap .zona_28 .pointNavigation{
+    margin-left: 120px;
+    margin-top: 0px;
+}
+#clubMap .zona_29 .pointNavigation{
+    margin-left: 130px;
+    margin-top: 80px;
+}
+#clubMap .zona_30 .pointNavigation{
+    margin-left: 60px;
+    margin-top: -6px;
+}
+#clubMap .zona_31 .pointNavigation{
+    margin-left: 60px;
+    margin-top: -5px;
+}
+#clubMap .zona_32 .pointNavigation{
+    margin-left: 60px;
+    margin-top: -5px;
+}
+#clubMap .zona_24 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -5px;
+}
+#clubMap .zona_18 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -5px;
+}
+#clubMap .zona_21 .pointNavigation{
+    margin-left: 75px;
+    margin-top: -10px;
+}
+#clubMap .zona_20 .pointNavigation{
+    margin-left: 55px;
+    margin-top: -10px;
+}
+#clubMap .zona_13 .pointNavigation{
+    margin-left: 155px;
+    margin-top: -40px;
+}
+#clubMap .zona_2 .pointNavigation{
+    margin-left: 35px;
+    margin-top: 10px;
+}
+#clubMap .zona_3 .pointNavigation{
+    margin-left: 45px;
+    margin-top: -10px;
+}
+#clubMap .zona_23 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+#clubMap .zona_17 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+#clubMap .zona_16 .pointNavigation{
+    margin-left: 60px;
+    margin-top: -30px;
+}
+#clubMap .zona_22 .pointNavigation{
+    margin-left: 70px;
+    margin-top: -20px;
+}
+#clubMap .zona_14 .pointNavigation{
+    margin-left: 60px;
+    margin-top: -30px;
+}
+#clubMap .zona_15 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+#clubMap .zona_7 .pointNavigation{
+    margin-left: 67px;
+    margin-top: 20px;
+}
+#clubMap .zona_5 .pointNavigation{
+    margin-left: 70px;
+    margin-top: -20px;
+}
+#clubMap .zona_6 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+#clubMap .zona_25 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+#clubMap .zona_4 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+#clubMap .zona_8 .pointNavigation{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+#clubMap .zona_9 .pointNavigation{
+    margin-left: 45px;
+    margin-top: -30px;
+}
+#clubMap .zona_11 .pointNavigation{
+    margin-left: 40px;
+    margin-top: -30px;
+}
+#clubMap .zona_10 .pointNavigation{
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+.sWrap{position: absolute; width: 412px; height: 259px; display: none;}
+.sImg{position: absolute; width: 351px; height: 201px; left: 40px; top: 20px;}
+.sFrame{position: absolute; width: 412px; height: 259px; left: 0; top: 0; background: url("/scheme/img/frame.png") 0 0 no-repeat;}
+.sWT{left: 0; top: 10px;}
+.sWB{right: 0; bottom: 0;}
+
+/* Scheme */
+#clubMap .zona_1{
+    height: 74px;
+    left: 522px;
+    padding-top: 48px;
+    top: 226px;
+    width: 81px;
+}
+
+#clubMap .zona_2{
+    height: 86px;
+    left: 559px;
+    padding-top: 48px;
+    top: 209px;
+    width: 63px;
+}
+
+#clubMap .zona_3{
+    height: 99px;
+    left: 515px;
+    padding-top: 48px;
+    top: 190px;
+    width: 106px;
+}
+
+#clubMap .zona_4{
+    height: 92px;
+    left: 531px;
+    padding-top: 48px;
+    top: 42px;
+    width: 95px;
+}
+
+#clubMap .zona_5{
+    height: 202px;
+    left: 497px;
+    padding-top: 48px;
+    top: 142px;
+    width: 257px;
+}
+
+#clubMap .zona_6{
+    height: 63px;
+    left: 544px;
+    padding-top: 48px;
+    top: 121px;
+    width: 71px;
+}
+
+#clubMap .zona_7{
+    height: 130px;
+    left: 481px;
+    padding-top: 48px;
+    top: 76px;
+    width: 157px;
+}
+
+#clubMap .zona_8{
+    height: 118px;
+    left: 453px;
+    padding-top: 48px;
+    top: 120px;
+    width: 107px;
+}
+
+#clubMap .zona_9{
+    height: 99px;
+    left: 431px;
+    padding-top: 48px;
+    top: 151px;
+    width: 94px;
+}
+
+#clubMap .zona_10{
+    height: 165px;
+    left: 423px;
+    padding-top: 48px;
+    top: 225px;
+    width: 148px;
+}
+
+#clubMap .zona_11{
+    height: 83px;
+    left: 467px;
+    padding-top: 48px;
+    top: 210px;
+    width: 72px;
+}
+
+#clubMap .zona_12{
+    height: 64px;
+    left: 605px;
+    padding-top: 48px;
+    top: 183px;
+    width: 68px;
+}
+
+#clubMap .zona_13{
+    height: 187px;
+    left: 566px;
+    padding-top: 48px;
+    top: 49px;
+    width: 231px;
+}
+
+#clubMap .zona_14{
+    height: 87px;
+    left: 611px;
+    padding-top: 48px;
+    top: 119px;
+    width: 98px;
+}
+
+#clubMap .zona_15{
+    height: 64px;
+    left: 649px;
+    padding-top: 48px;
+    top: 162px;
+    width: 78px;
+}
+
+#clubMap .zona_16{
+    height: 65px;
+    left: 669px;
+    padding-top: 48px;
+    top: 88px;
+    width: 88px;
+}
+
+#clubMap .zona_17{
+    height: 56px;
+    left: 715px;
+    padding-top: 48px;
+    top: 76px;
+    width: 71px;
+}
+
+#clubMap .zona_18{
+    height: 71px;
+    left: 764px;
+    padding-top: 48px;
+    top: 53px;
+    width: 80px;
+}
+
+#clubMap .zona_19{
+    height: 175px;
+    left: 681px;
+    padding-top: 48px;
+    top: 107px;
+    width: 188px;
+}
+#clubMap .pointNavigation .number{
+text-decoration: none;
+z-index: 100000;
+position: absolute;
+
+}
+#clubMap .pointNavigation {
+    display: block;
+    position: relative;
+}
+#clubMap .p_N_n {
+    width: 100%;
+}
+#clubMap .point.active .pointNavigation .textN{
+
+    display:inline;
+    }
+
+
+#clubMap .zona_20{
+    height: 67px;
+    left: 704px;
+    padding-top: 48px;
+    top: 169px;
+    width: 81px;
+}
+
+#clubMap .zona_21{
+    height: 78px;
+    left: 730px;
+    padding-top: 48px;
+    top: 146px;
+    width: 98px;
+}
+
+#clubMap .zona_22{
+    height: 70px;
+    left: 686px;
+    padding-top: 48px;
+    top: 102px;
+    width: 97px;
+}
+
+#clubMap .zona_23{
+    height: 60px;
+    left: 739px;
+    padding-top: 48px;
+    top: 87px;
+    width: 76px;
+}
+
+#clubMap .zona_24{
+    height: 76px;
+    left: 780px;
+    padding-top: 48px;
+    top: 94px;
+    width: 76px;
+}
+
+#clubMap .zona_25{
+    height: 96px;
+    left: 630px;
+    padding-top: 48px;
+    top: 237px;
+    width: 80px;
+}
+
+#clubMap .zona_26{
+    height: 161px;
+    left: 657px;
+    padding-top: 48px;
+    top: 245px;
+    width: 164px;
+}
+
+#clubMap .zona_27{
+    height: 177px;
+    left: 728px;
+    padding-top: 48px;
+    top: 191px;
+    width: 197px;
+}
+
+#clubMap .zona_28{
+    height: 188px;
+    left: 8px;
+    padding-top: 48px;
+    top: 161px;
+    width: 176px;
+}
+
+#clubMap .zona_29{
+    height: 213px;
+    left: 76px;
+    padding-top: 48px;
+    top: 295px;
+    width: 172px;
+}
+
+#clubMap .zona_30{
+    height: 182px;
+    left: 160px;
+    padding-top: 48px;
+    top: 279px;
+    width: 115px;
+}
+
+#clubMap .zona_31{
+    height: 147px;
+    left: 179px;
+    padding-top: 48px;
+    top: 317px;
+    width: 101px;
+}
+
+#clubMap .zona_32{
+    height: 114px;
+    left: 199px;
+    padding-top: 48px;
+    top: 357px;
+    width: 89px;
+}
+
+#clubMap .zona_33{
+    height: 163px;
+    left: 288px;
+    padding-top: 48px;
+    top: 265px;
+    width: 106px;
+}
+
+#clubMap .zona_34{
+    height: 329px;
+    left: 103px;
+    padding-top: 48px;
+    top: 123px;
+    width: 287px;
+}
