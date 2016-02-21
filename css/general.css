@@ -1972,6 +1972,11 @@ button.mfp-arrow-right:hover {
     height: auto;
     margin-bottom: 10px;
 }
+.no-flexbox .controls__select .dropdown li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
 .controls__select .dropdown li * {
     display: inline-block;
     vertical-align: middle;
