@@ -82,7 +82,63 @@
             <div class="main_content">
                 <!-- begin timetable -->
                 <section class="timetable">
-                    
+                    <!-- begin controls -->
+                    <div class="controls clearfix">
+                        <!-- begin controls__select -->
+                        <div class="controls__select">
+                            <span id="drop_btn">Все направления</span>
+                            <ul class="flex flex-between dropdown">
+                                <li>
+                                    <input type="checkbox" id="i1">
+                                    <label for="i1">Yoga</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i2">
+                                    <label for="i2">FUNCTIONAL TRAINING Body Ball</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i3">
+                                    <label for="i3">Wushu Sanda</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i4">
+                                    <label for="i4">Студия Belly Dance</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i5">
+                                    <label for="i5">UNCTIONAL TRAINING Gymstick</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i6">
+                                    <label for="i6">Anti Gravity Yoga</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i7">
+                                    <label for="i7">Port De Bras</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i8">
+                                    <label for="i8">BOSU</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i9">
+                                    <label for="i9">Zumba</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i10">
+                                    <label for="i10">Anti Gravity Yoga</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end colntrols__select -->
+
+                        <a href="" class="controls__print_btn"><span>Распечатать</span></a>
+                        <a href="" class="controls__next_week">Следующая неделя</a>
+                    </div>
+                    <!-- end controls -->
+
+                    <!-- Сюда вставляеться таблица с сайта ultra-fitness.ru -->
+                    <div class="table"></div>
                 </section>
                 <!-- end timetable -->
             </div>
@@ -158,7 +214,7 @@
         <script src="js/main.js"></script>
         <script>
             jQuery(document).ready(function($) {
-                $('.timetable').load('table.html');
+                $('.timetable .table').load('table.html');
             });
         </script>
     </body>

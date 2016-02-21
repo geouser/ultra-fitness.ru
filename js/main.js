@@ -83,6 +83,33 @@ jQuery(document).ready(function($) {
     $('body, html').removeClass('menu_active');
   });
 
+
+  function text_change(el){
+    if (el.parent().hasClass('active')) {
+      el.text('Скрыть');
+    } else {
+      el.text('Все направления');
+    }
+  }
+
+  $('#drop_btn').on('click', function(event) {
+    event.preventDefault();
+    $(this).parent().toggleClass('active');
+    text_change($(this));
+  });
+
+
+
+  /*Dropdown width*/
+  function change_width_dropdown(){
+    var w = $('.main_content').width();
+    $('.dropdown').width(w-50);
+  }
+  change_width_dropdown();
+  $(window).resize(function(event) {
+    change_width_dropdown();
+  });
+
 });
 
 
