@@ -394,19 +394,20 @@ nav ul li.active a {
         font-size: 15rem;
         padding-top: 21px;
     }
+    header .top_line {height: 67px;}
 }
 
 
 @media (max-width: 992px) {
     nav .wrapper {
-        text-align: right;
+        text-align: left;
     }
     nav button.order {
         display: block;
         width: auto;
         border-color: #fff!important;
         color: #fff!important;
-        float: left;
+        float: right;
         margin-left: 0;
         margin-right: 20px;
         padding: 0 15px;
@@ -426,13 +427,13 @@ nav ul li.active a {
     }
     #menu_button {
         display: inline-block;
-        width: 45px;
-        height: 45px;
-        background-color: #fff;
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
         border-radius: 5px;
         border: none;
         background-image: url(../images/interface.svg);
-        background-size: 75%;
+        background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         margin: 9px 0;
@@ -2372,10 +2373,9 @@ top: 40%;}
 
 @media (max-width: 1330px) {
 .scheme-map-signs li {width: auto !important;}
-.scheme-map {width: 80%; margin: 0 auto;}
 .scheme-map img {
-    margin-left: 6px;
-    margin-top: -4px;
+    margin-left: 3px;
+    margin-top: -1px;
 }
 .scheme-list li  {font-size: 14px; padding-top: 2px; padding-bottom: 3px; padding-left: 10px;}
 .scheme-list ol     {
@@ -2404,6 +2404,9 @@ top: 40%;}
 }
 @media (max-width: 600px) {
     .scheme-map {width: 100%;}
+    .scheme-map img {
+    margin-left: 5px;
+}
 .scheme-list ol     {    -webkit-column-count: 2;
     -moz-column-count: 2; 
     column-count: 2;
@@ -2414,5 +2417,9 @@ top: 40%;}
 .scheme-list ol     {
     -webkit-column-gap: 4px;
     -moz-column-gap: 4px; 
-    column-gap: 4px;
+    column-gap: 4px;}
+        .scheme-map img {
+    margin-left: 6px;
+    margin-top: -5px;
+}
 }
