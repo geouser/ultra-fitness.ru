@@ -14,6 +14,25 @@ window.params = {
 
 jQuery(document).ready(function($) {
 
+if ($(window).width() <= 900) {
+    $(".scheme-list li").click(function() {
+      $(".scheme-list li").removeClass('active');
+      $(this).addClass('active');
+      $(".scheme-list li").children().slideUp();
+      $(this).children().slideToggle();
+    });
+    }
+    $(window).resize(function() {
+      if ($(window).width() <= 900) {
+      $(".scheme-list li").click(function() {
+            $(".scheme-list li").removeClass('active');
+            $(this).addClass('active');
+            $(".scheme-list li").children().slideUp();
+            $(this).children().slideToggle();
+          });
+      }
+    });
+
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
@@ -87,4 +106,26 @@ jQuery(document).ready(function($) {
 
 
 
+$('svg path, svg polygon').hover(function(){
+  $('.scheme-map svg path, .scheme-map svg polygon').removeClass('active');
+  $(this).addClass('active');
+  var num = $(this).attr('num');
+  var lastN = num.substr(num.length - 2);
+  $('.scheme-list ol li').removeClass('active');
+  $('.scheme-list ol li#' + num).addClass('active');
+   $('.scheme-map-signs li').css('display', 'none');
+  $('.scheme-map-signs li#r-' + lastN).css('display', 'block');
+});
 
+
+$('.scheme-list ol li').hover(function(){
+  $('.scheme-map svg path, .scheme-map svg polygon').removeClass('active');
+  $('.scheme-list ol li').removeClass('active');
+  $(this).addClass('active');
+  var num2 = $(this).attr('id');
+  var lastN = num2.substr(num2.length - 2);
+  $('.scheme-map svg path[num=' + num2 + ']').addClass('active');
+  $('.scheme-map svg polygon[num=' + num2 + ']').addClass('active');
+  $('.scheme-map-signs li').css('display', 'none');
+  $('.scheme-map-signs li#r-' + lastN).css('display', 'block');
+});
