@@ -417,6 +417,8 @@ nav ul li.active a {
         background-color: transparent;
     }
 
+    .breadcrumbs {padding: 30px 0 !important;}
+
 
 
 
@@ -492,13 +494,13 @@ nav ul li.active a {
         font-size: 12rem;
         padding: 0 5px;
         height: 35px;
-        margin-top: 15px;
+        margin-top: 6px;
         margin-right: 5px;
     }
     #menu_button {
-        width: 35px;
-        height: 35px;
-        margin: 15px 0;
+        width: 30px;
+        height: 30px;
+        margin: 8px 0;
     }
     header .logo {
         width: 120px;
@@ -517,6 +519,11 @@ nav ul li.active a {
     .mobile_menu.active #overlay_close {
         width: calc(100% - 250px);
     }
+
+    header .top_line {height: 49px;}
+    header .logo {margin-top: 11px;}
+
+    .breadcrumbs {padding: 20px 0 !important;}
 }
 
 
