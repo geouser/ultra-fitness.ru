@@ -228,7 +228,7 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .wrapper {
     width: 100%;
     padding: 0 15px;
@@ -609,7 +609,7 @@ nav ul li.active a {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .offer h1 br {
         display: none;
     }
@@ -687,7 +687,7 @@ nav ul li.active a {
         font-size: 22rem;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .feature_box {
         width: 50%;
         margin-bottom: 40px;
@@ -1071,7 +1071,7 @@ nav ul li.active a {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .order_card form {
     width: 450px;
     padding: 20px 30px;
@@ -1239,7 +1239,7 @@ footer .copy a:hover {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   footer .site_map ul.flex>li {
     width: 50%;
   }
@@ -1459,7 +1459,7 @@ footer .copy a:hover {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .is_sidebar .breadcrumbs {
         padding-left: 0;
     }
@@ -1713,7 +1713,7 @@ footer .copy a:hover {
         }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .action {
         width: 100%;
     }
@@ -1775,7 +1775,7 @@ footer .copy a:hover {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .ation_details figure {
         float: none;
         display: block;
@@ -1834,7 +1834,7 @@ footer .copy a:hover {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .photo_gallery a {
         height: 140px;
     }
