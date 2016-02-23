@@ -102,6 +102,42 @@ if ($(window).width() <= 900) {
     $('body, html').removeClass('menu_active');
   });
 
+
+
+/*Dropdown (TIMETABLE page)*/
+  function text_change(el){
+    if (el.parent().hasClass('active')) {
+      el.text('Скрыть');
+    } else {
+      el.text('Все направления');
+    }
+  }
+
+  $('#drop_btn').on('click', function(event) {
+    event.preventDefault();
+    $('.controls__select').toggleClass('active');
+    text_change($(this));
+  });
+
+
+  $('#close_dropdown').on('click', function(event) {
+    event.preventDefault();
+    $('.controls__select').removeClass('active')
+    text_change($('#drop_btn'));
+  });
+
+
+
+  /*Dropdown width*/
+  function change_width_dropdown(){
+    var w = $('.main_content').width();
+    $('.dropdown').width(w-50); // -50px bug
+  }
+  change_width_dropdown();
+  $(window).resize(function(event) {
+    change_width_dropdown();
+  });
+
 });
 
 
