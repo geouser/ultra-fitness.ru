@@ -1746,7 +1746,7 @@ footer .copy a:hover {
         position: static;
     }
 
-    .ation_details h2 {
+    .ation_details h1 {
         font-size: 35rem;
         line-height: 35rem;
         margin: 25px 0;
@@ -1762,7 +1762,7 @@ footer .copy a:hover {
     .ation_details figure {
         width: 350px;
     }
-    .ation_details h2 {
+    .ation_details h1 {
         font-size: 30rem;
         line-height: 30rem;
     }
@@ -1781,7 +1781,7 @@ footer .copy a:hover {
         display: block;
         margin: 0 auto 50px auto;
     }
-    .ation_details h2 {
+    .ation_details h1 {
         font-size: 25rem;
         line-height: 25rem;
     }
