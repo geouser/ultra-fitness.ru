@@ -411,7 +411,7 @@ nav ul li.active a {
         margin-left: 0;
         margin-right: 20px;
         padding: 0 15px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     nav button.order:hover {
         background-color: transparent;
@@ -434,7 +434,7 @@ nav ul li.active a {
         background-color: transparent;
         border-radius: 5px;
         border: none;
-        background-image: url(../images/interface.svg);
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzE3LjgyNSAzMTcuODI1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMTcuODI1IDMxNy44MjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxnPg0KCQkJCTxwYXRoIGQ9Ik0zMDEuOTM0LDE0My4wMjFIMTUuODkxQzcuMTE5LDE0My4wMjEsMCwxNTAuMTQsMCwxNTguOTEyYzAsOC43NzIsNy4xMTksMTUuODkxLDE1Ljg5MSwxNS44OTEgICAgICBoMjg2LjA0MmM4Ljc0LDAsMTUuODkxLTcuMTE5LDE1Ljg5MS0xNS44OTFDMzE3LjgyNSwxNTAuMTQsMzEwLjY3NCwxNDMuMDIxLDMwMS45MzQsMTQzLjAyMXoiIGZpbGw9IiNGRkZGRkYiLz4NCgkJCQk8cGF0aCBkPSJNMTUuODkxLDc5LjQ1NmgyODYuMDQyYzguNzQsMCwxNS44OTEtNy4xMTksMTUuODkxLTE1Ljg5MXMtNy4xNTEtMTUuODkxLTE1Ljg5MS0xNS44OTFIMTUuODkxICAgICAgQzcuMTE5LDQ3LjY3NCwwLDU0Ljc5MywwLDYzLjU2NVM3LjExOSw3OS40NTYsMTUuODkxLDc5LjQ1NnoiIGZpbGw9IiNGRkZGRkYiLz4NCgkJCQk8cGF0aCBkPSJNMzAxLjkzNCwyMzguMzY5SDE1Ljg5MUM3LjExOSwyMzguMzY5LDAsMjQ1LjUyLDAsMjU0LjI2YzAsOC43NCw3LjExOSwxNS44OTEsMTUuODkxLDE1Ljg5MSAgICAgIGgyODYuMDQyYzguNzQsMCwxNS44OTEtNy4xNTEsMTUuODkxLTE1Ljg5MUMzMTcuODI1LDI0NS41MiwzMTAuNjc0LDIzOC4zNjksMzAxLjkzNCwyMzguMzY5eiIgZmlsbD0iI0ZGRkZGRiIvPg0KCQkJPC9nPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=);
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
