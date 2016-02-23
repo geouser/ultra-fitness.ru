@@ -2391,7 +2391,7 @@ top: 40%;}
 
 .scheme-list li     {padding: 1px 2px 2px; overflow: hidden;}
 .scheme-list li div {position: static; display: none; width: 100%; display: none;}
-.scheme-list li.active div {display: none !important;}
+.scheme-list li.active div {display: none;}
     .scheme-map-signs li {font-size: 0; background: transparent;}
 }
 .scheme-map-signs li i {font-size: 15px; border: 1px solid #fff;}
